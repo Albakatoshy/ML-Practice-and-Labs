@@ -1,6 +1,6 @@
 # 🚀 Machine Learning Practice and Labs
 
-Welcome to my Machine Learning portfolio! This repository serves as a growing collection of my hands-on labs, university assignments, and personal projects. It demonstrates my practical experience with various ML algorithms, data preprocessing techniques, and model evaluation metrics using Python and Scikit-Learn.
+Welcome to my Machine Learning portfolio! This repository serves as a growing collection of my hands-on labs, university assignments, and personal projects. It demonstrates my practical experience with various ML algorithms, deep learning architectures, data preprocessing techniques, and model evaluation metrics.
 
 ---
 
@@ -13,13 +13,16 @@ Here is an overview of the current projects and labs in this repository:
     ├── README.md
     │
     ├── 01-KNN/
-    │   ├── KNN_Predict_Diabetes/            # Predicting diabetes using K-Nearest Neighbors
-    │   ├── KNN_Predict_Gamma_Rays/          # MAGIC Gamma Telescope dataset classification
-    │   └── SimpleKnn/                       # Foundational KNN implementation and practice
+    │   ├── KNN_Predict_Diabetes/               # Predicting diabetes using K-Nearest Neighbors
+    │   ├── KNN_Predict_Gamma_Rays/             # MAGIC Gamma Telescope dataset classification
+    │   └── SimpleKnn/                          # Foundational KNN implementation and practice
     │
-    └── 02-Linear-Regression/
-        ├── LinearRegression_CaliforniaHousePricePrediction/  # Predicting housing prices (Linear, Ridge, Lasso)
-        └── LinearRegression_PredictCustomerSpend/            # Predicting E-commerce yearly spend
+    ├── 02-Linear-Regression/
+    │   ├── LinearRegression_CaliforniaHousePricePrediction/  # Predicting housing prices (Linear, Ridge, Lasso)
+    │   └── LinearRegression_PredictCustomerSpend/            # Predicting E-commerce yearly spend
+    │
+    └── 03-Neural-Networks/
+        └── MINST_DigitRecognition.ipynb        # Custom PyTorch CNN for Kaggle MNIST Classification
 
 ---
 
@@ -39,6 +42,13 @@ This module focuses on predicting continuous target variables and dealing with o
 * **Predict Customer Spend:** A business-focused project analyzing e-commerce engagement metrics (Time on App/Website, Length of Membership) to predict yearly customer spending.
 * **Key Skills:** Exploratory Data Analysis (EDA) with Seaborn, Residual Analysis (Q-Q plots, distributions), Hyperparameter tuning (alpha penalties), Mean Absolute Error (MAE), and Mean Squared Error (MSE).
 
+### [03. Neural Networks & Deep Learning](./03-Neural-Networks)
+This module transitions into deep learning, focusing on computer vision and custom network architectures.
+
+* **MNIST Digit Recognition:** Built a custom Convolutional Neural Network (CNN) from scratch to classify handwritten digits using Kaggle's flattened CSV dataset. Includes custom PyTorch `Dataset` classes to dynamically reshape 1D arrays into 2D spatial grids.
+* **Model Optimization:** Addressed overfitting and stabilized the loss landscape by implementing **Dropout** and **Layer Normalization**, achieving >98% accuracy on the test set.
+* **Key Skills:** PyTorch (`nn.Module`, `Conv2d`), Custom DataLoaders, Spatial Reshaping, Cross-Entropy Loss, SGD Optimization, and Deep Learning model evaluation.
+
 ---
 
 ## 🛠️ Technologies & Libraries Used
@@ -46,6 +56,7 @@ This module focuses on predicting continuous target variables and dealing with o
 * **Language:** Python 3
 * **Data Manipulation:** `pandas`, `numpy`
 * **Machine Learning:** `scikit-learn`
+* **Deep Learning:** `torch` (PyTorch), `torchvision`
 * **Data Visualization:** `matplotlib`, `seaborn`, `scipy`
 
 ---
